@@ -36,6 +36,7 @@ CREATE TABLE novel (
     description VARCHAR(255) NOT NULL,
     tag_id INT,
     tag_name VARCHAR(255),
+    img VARCHAR(255),
     FOREIGN KEY (novel_type_id) REFERENCES catogorys(catogory_id),
     FOREIGN KEY (author_id) REFERENCES users(user_id),
     FOREIGN KEY (tag_id) REFERENCES tags(tag_id)
